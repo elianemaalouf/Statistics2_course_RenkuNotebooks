@@ -48,7 +48,7 @@ RUN apt-get update && apt-get install -y \
 
 # Run Chrome as non privileged user
 #USER chrome
-USER ${NB_USER}¨
+USER ${NB_USER}
 
 # install the python dependencies
 COPY requirements.txt environment.yml /tmp/
