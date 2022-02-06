@@ -42,13 +42,13 @@ RUN apt-get update && apt-get install -y \
 
 # Add chrome user
 RUN groupadd -r chrome && useradd -r -g chrome -G audio,video chrome \
-    && mkdir -p /home/chrome/Downloads && chown -R chrome:chrome /home/chrome
+    && mkdir -p /home/jovyan/work/chrome/Downloads && chown -R chrome:chrome /home//jovyan/work/chrome
 
 COPY local.conf /etc/fonts/local.conf
 
 # Run Chrome as non privileged user
-USER chrome
-
+#USER chrome
+USER ${NB_USER}¨
 
 # install the python dependencies
 COPY requirements.txt environment.yml /tmp/
