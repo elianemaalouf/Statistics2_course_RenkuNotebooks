@@ -36,7 +36,13 @@ RUN jupyter nbextension enable exercise/main
 RUN jupyter nbextension enable exercise2/main
 RUN jupyter nbextension enable init_cell/main
 RUN jupyter nbextension enable hide_input/main
+RUN jupyter nbextension enable python-markdown/main
 
+#RUN jupyter nbextension install --user --py widgetsnbextension
+#RUN jupyter nbextension enable --py widgetsnbextension
+
+RUN jupyter nbextension install --user --py egal
+RUN jupyter nbextension enable --user --py egal 
 
 
 # RENKU_VERSION determines the version of the renku CLI
