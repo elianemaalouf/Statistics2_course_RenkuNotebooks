@@ -26,7 +26,17 @@ RUN conda env update -q -f /tmp/environment.yml && \
     conda clean -y --all && \
     conda env export -n "root"
 
+# Jupyter Notebook extensions 
 RUN jupyter nbextensions_configurator enable --user
+RUN jupyter contrib nbextensions install --user 
+
+RUN jupyter nbextension enable toc2/main
+RUN jupyter nbextension enable rubberband/main
+RUN jupyter nbextension enable exercise/main
+RUN jupyter nbextension enable exercise2/main
+RUN jupyter nbextension enable init_cell/main
+RUN jupyter nbextension enable hide_input/main
+
 
 
 # RENKU_VERSION determines the version of the renku CLI
