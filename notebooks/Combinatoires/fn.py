@@ -34,6 +34,16 @@ def verify_ex3_4():
     total = 5 * 9 * 8 + 5 * 9 * 8 * 7 + 5 * 9 * 8 * 7 * 6
     return total 
 
-def count_total(n, n_choice, n_correct):
+def count_with_rep(n, n_choice):
     total = n_choice**n
     return total
+
+def verify_ex4_1(n, n_choice):
+    total = count_with_rep(n, n_choice)
+    return total
+
+def verify_ex4_2(n, n_choice, l, _choice):
+    total = count_with_rep(l, l_choice) * count_with_rep(n, n_choice) 
+    return total
+
+def verify_ex4_3(n, n_choice, l, _choice)
