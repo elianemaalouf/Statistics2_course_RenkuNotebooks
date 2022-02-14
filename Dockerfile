@@ -12,7 +12,7 @@ FROM ${RENKU_BASE_IMAGE}
 #
 USER root
 RUN apt-get update && \
-RUN apt-get install -y openssh-client
+    apt-get install -y --no-install-recommends openssh-client
 # RUN apt-get update && \
 #    apt-get install -y --no-install-recommends \
 #    apt-utils \
