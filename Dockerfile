@@ -10,12 +10,14 @@ FROM ${RENKU_BASE_IMAGE}
 # e.g. the following installs apt-utils and vim; each pkg on its own line, all lines
 # except for the last end with backslash '\' to continue the RUN line
 #
-# USER root
+USER root
+RUN apt-get update && \
+RUN apt-get install -y openssh-client
 # RUN apt-get update && \
 #    apt-get install -y --no-install-recommends \
 #    apt-utils \
 #    vim
-# USER ${NB_USER}
+USER ${NB_USER}
 
 
 
