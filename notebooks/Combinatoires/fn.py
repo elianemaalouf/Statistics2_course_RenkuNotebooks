@@ -46,4 +46,5 @@ def verify_ex4_2(n, n_choice, l, _choice):
     total = count_with_rep(l, l_choice) * count_with_rep(n, n_choice) 
     return total
 
-def verify_ex4_3(n, n_choice, l, _choice)
+def verify_ex4_3(n, n_choice, l, _choice):
+    pass
