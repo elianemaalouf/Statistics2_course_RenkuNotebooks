@@ -42,7 +42,7 @@ def verify_ex5_1(n, n_choice):
     total = count_with_rep(n, n_choice)
     return total
 
-def verify_ex5_2(n, n_choice, l, _choice):
+def verify_ex5_2(n, n_choice, l, l_choice):
     total = count_with_rep(l, l_choice) * count_with_rep(n, n_choice) 
     return total
 
