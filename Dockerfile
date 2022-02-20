@@ -39,6 +39,7 @@ RUN jupyter nbextension enable exercise2/main
 RUN jupyter nbextension enable init_cell/main
 RUN jupyter nbextension enable hide_input/main
 RUN jupyter nbextension enable python-markdown/main
+RUN jupyter nbextension enable hide_input_all/main
 
 #RUN jupyter nbextension install --user --py widgetsnbextension
 #RUN jupyter nbextension enable --py widgetsnbextension
