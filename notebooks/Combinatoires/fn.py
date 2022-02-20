@@ -1,3 +1,8 @@
+from math import factorial
+
+def nCr(n,r):
+    return factorial(n) / factorial(r) / factorial(n-r)
+
 def verify_ex1(n, n_choice):
     total = n_choice ** n 
     return total 
@@ -46,5 +51,22 @@ def verify_ex5_2(n, n_choice, l, l_choice):
     total = count_with_rep(l, l_choice) * count_with_rep(n, n_choice) 
     return total
 
-def verify_ex5_3(n, n_choice, l, _choice):
-    pass
+def verify_ex5_3(pos, n, n_choice, l, l_choice):
+    # position the letter 
+    # choose the letter and choose the numbers 
+    total = count_with_rep(l, l_choice) * count_with_rep(n, n_choice) 
+    return total * pos
+
+def verify_ex5_4(n, n_choice, l, l_choice):
+    total = 0
+    total_let = count_with_rep(l, l_choice) 
+    for i in range(n+1):
+        total = total + total_let * count_with_rep(i, n_choice) 
+    return total 
+
+def verify_ex5_5(pos, n, n_choice, l, l_choice):
+    # position the letters
+    pos_let = nCr(pos, l)
+     # choose the letters and choose the numbers 
+    total = count_with_rep(l, l_choice) * count_with_rep(n, n_choice) 
+    return total * pos_let
