@@ -3,6 +3,9 @@ from math import factorial
 def nCr(n,r):
     return factorial(n) / factorial(r) / factorial(n-r)
 
+def permutationNoRep(n):
+    return factorial(n)
+
 def verify_ex1(n, n_choice):
     total = n_choice ** n 
     return total 
@@ -70,3 +73,10 @@ def verify_ex5_5(pos, n, n_choice, l, l_choice):
      # choose the letters and choose the numbers 
     total = count_with_rep(l, l_choice) * count_with_rep(n, n_choice) 
     return total * pos_let
+
+def verify_ex6_1(n, reps_n):
+    prod_rep = 1
+    for i in reps_n:
+        prod_rep = prod_rep * factorial(i)
+    total = factorial(n)/prod_rep
+    return total
