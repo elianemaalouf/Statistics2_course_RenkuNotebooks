@@ -9,6 +9,9 @@ def permutationNoRep(n):
 def arrangementRep(n,k):
     return n**k
 
+def sequenceNoRep(n, k):
+    return factorial(n)/factorial(n-k)
+
 def verify_ex1(n, n_choice):
     total = n_choice ** n 
     return total 
