@@ -6,6 +6,13 @@ def nCr(n,r):
 def permutationNoRep(n):
     return factorial(n)
 
+def premutationRep(n, reps_n):
+    prod_rep = 1
+    for i in reps_n:
+        prod_rep = prod_rep * factorial(i)
+    total = factorial(n)/prod_rep
+    return total
+
 def arrangementRep(n,k):
     return n**k
 
@@ -86,3 +93,11 @@ def verify_ex6_1(n, reps_n):
         prod_rep = prod_rep * factorial(i)
     total = factorial(n)/prod_rep
     return total
+
+def verify_ex7_2(n, reps_n):
+    reps_pos = n - reps_n[0] + 1
+    total = premutationRep(n, reps_n) - (factorial(n - reps_n[0]) * reps_pos)
+    return total 
+
+def verify_ex7_3(n, voy, reps):
+    return 1440 
