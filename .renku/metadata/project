@@ -1,0 +1,32 @@
+{
+  "@renku_data_type": "renku.core.models.project.Project",
+  "@renku_oid": "project",
+  "agent_version": "1.0.6",
+  "annotations": [],
+  "automated_update": false,
+  "creator": {
+    "@renku_data_type": "renku.core.models.provenance.agent.Person",
+    "@renku_data_value": {
+      "affiliation": null,
+      "alternate_name": null,
+      "email": "eliane.maalouf@hefr.ch",
+      "id": "mailto:eliane.maalouf@hefr.ch",
+      "name": "Eliane Maalouf"
+    }
+  },
+  "date_created": {
+    "@renku_data_type": "datetime.datetime",
+    "@renku_data_value": "2022-02-03T16:02:43+00:00"
+  },
+  "description": null,
+  "id": "/projects/eliane.maalouf/cours-de-statistique-2",
+  "immutable_template_files": [],
+  "keywords": [],
+  "name": "Cours de statistique 2",
+  "template_id": "python-minimal",
+  "template_metadata": "{\"__template_source__\": \"https://github.com/SwissDataScienceCenter/renku-project-template\", \"__template_ref__\": \"0.2.1\", \"__template_id__\": \"python-minimal\", \"__namespace__\": \"eliane.maalouf\", \"__automated_update__\": true, \"__repository__\": \"https://renku.unifr.ch/gitlab\", \"__sanitized_project_name__\": \"cours-de-statistique-2\", \"__project_slug__\": \"eliane.maalouf/cours-de-statistique-2\", \"__renku_version__\": \"0.16.2\", \"name\": \"Cours de statistique 2\"}",
+  "template_ref": "0.2.1",
+  "template_source": "https://github.com/SwissDataScienceCenter/renku-project-template",
+  "template_version": "ee01a22fe6cfb6b8af1f631919e784fa3efd5c6d",
+  "version": "9"
+}
