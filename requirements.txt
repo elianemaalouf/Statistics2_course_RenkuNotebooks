@@ -4,3 +4,6 @@ jupyter_nbextensions_configurator
 voila
 matplotlib
 git+https://github.com/uclmr/egal.git
+sympy
+matplotlib_venn
+
