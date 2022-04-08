@@ -6,4 +6,6 @@ matplotlib
 git+https://github.com/uclmr/egal.git
 sympy
 matplotlib_venn
+pandas
+statsmodels
 
