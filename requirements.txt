@@ -8,4 +8,5 @@ sympy
 matplotlib_venn
 pandas
 statsmodels
+seaborn 
 
